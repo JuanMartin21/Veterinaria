@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #cfe6f6;
+  color: #0b2b3d;
+  background-color: #99c7e2;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23cfe6f6' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  display: grid;
+}
+a {
+  color: #0b2b3d;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.nav-main {
+  margin-top: 20px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+.nav-brad {
+  width: 70px;
+}
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+.nav-main ul li {
+  padding: 10px;
+}
+.nav-main ul li a:hover {
+  border-bottom: 3px solid #0b2b3d;
+}
+.header-show {
+  width: 100%;
+  height: 700px;
+  background: url("../media/Sin\ título-5.png") no-repeat center center/cover;
+
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.ImgP {
+  opacity: 0.4;
+}
+.header-show h2 {
+  margin-bottom: 15px;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: rgb(175, 175, 240);
+  border-radius: 30px;
+  color: #061b27;
+  border: 1px solid rgb(42, 42, 42);
+  margin: 15px 15px;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.Images {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Images img {
+  width: 100%;
+  height: 200px;
+}
+.Images h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.Images a {
+  padding: 10px 0;
+  color: #061b27;
+  display: inline-block;
+  font-weight: bold;
+}
+.Images a:hover {
+  text-decoration: underline;
+}
+.title {
+  text-align: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+/*
+.Featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}*/
+.Art {
+  text-align: center;
+}
+.Featured img {
+  width: 150px;
+  height: 150px;
+}
+.Featured h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.botton {
+  border: 1px solid rgb(93, 90, 90);
+  background-color: #318bbf;
+  color: rgb(222, 215, 215);
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.botton:hover {
+  opacity: 0.7;
+}
+
+.social {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  background: #318bbf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.redes {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.foot {
+  color: rgb(206, 201, 192);
+  font-size: 25px;
+}
+
+.nav-main {
+  grid-area: nav-main;
+}
+
+.header-show {
+  grid-area: header-show;
+}
+
+.title {
+  grid-area: title;
+}
+
+.Images,
+.Featured {
+  display: grid;
+}
+.social {
+  grid-area: social;
+}
+
+@media screen and (min-width: 1200px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 20% auto 30% 20% 2%;
+    grid-template-areas: "nav-main" "header-show" "Images" "title" "Featured" "social";
+  }
+  .Images {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .Featured {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #nav-menu {
+    display: block;
+  }
+
+  #menuBurger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% auto 30% 20% 2%;
+    grid-template-areas: "nav-main" "header-show" "Images" "title" "Featured" "social";
+  }
+  .Images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+  }
+  #nav-menu {
+    display: none;
+  }
+  nav {
+    justify-content: space-around;
+  }
+}
