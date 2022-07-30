@@ -41,6 +41,7 @@ ul {
 }
 .nav-brad {
   width: 70px;
+  border-radius: 10%;
 }
 .nav-main ul {
   display: flex;
@@ -162,7 +163,7 @@ h2 {
   margin-top: 30px;
   text-align: center;
   font-size: 30px;
-  background: rgb(140, 140, 150);
+  background: #d8953a;
   display: flex;
   justify-content: space-between;
   align-items: center;
