@@ -5,12 +5,10 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
   height: 100vh;
+  margin: 15px 15px 10px 10px;
   background: #cfe6f6;
   color: #0b2b3d;
-  background-color: #99c7e2;
-  background-color: #b3b3b3;
   background-color: #e09649;
   background-color: #fbd386;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c0b98a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -25,8 +23,8 @@ a {
 ul {
   list-style: none;
 }
-.container {
-  width: 90%;
+#container {
+  width: 80%;
   margin: auto;
 }
 
@@ -56,11 +54,11 @@ ul {
 .nav-main ul li a:hover {
   border-bottom: 3px solid #0b2b3d;
 }
+
 .header-show {
   width: 100%;
   height: 700px;
   background: url("../media/pet-g.png") no-repeat center center/cover;
-
   padding-bottom: 50px;
   margin-bottom: 20px;
   display: flex;
@@ -202,15 +200,16 @@ h2 {
   grid-area: social;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1900px) {
   #container {
     grid-template-columns: 1fr;
     grid-template-rows: 5% 20% auto 30% 20% 2%;
     grid-template-areas: "nav-main" "header-show" "Images" "title" "Featured" "social";
   }
   .Images {
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(1fr);
     grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
   }
   .Featured {
     grid-template-columns: repeat(4, 1fr);
@@ -228,17 +227,22 @@ h2 {
 @media screen and (max-width: 320px) {
   #container {
     grid-template-columns: 100%;
-    grid-template-rows: 5% 20% auto 30% 20% 2%;
-    grid-template-areas: "nav-main" "header-show" "Images" "title" "Featured" "social";
+    grid-template-rows: 5% auto 30% 20% 2%;
+    grid-template-areas: "nav-main" "Images" "title" "Featured" "social";
+    justify-content: center;
   }
   .Images {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
   }
-  #nav-menu {
+  .Featured {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+  }
+  .nav-main {
     display: none;
   }
-  nav {
-    justify-content: space-around;
+  .header-show {
+    display: none;
   }
 }
