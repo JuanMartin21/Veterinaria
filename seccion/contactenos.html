@@ -1,104 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="../media/hospit.jpg">
-    <link rel="stylesheet" href="../css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9f144cbf57.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../media/hospit.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style_contac.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9f144cbf57.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contactanos</title>
+  </head>
 
-</head>
-
-<body>
-    <div id="mainContac">
-        <nav class="nav-main">
-            <img class="nav-brad" src="../media/hospit.jpg" alt="logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="contactenos.html">CONTACTENOS</a>
-                </li>
-                <li>
-                    <a href="servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="articulos.html">ARTICULOS</a>
-                </li>
-                <li>
-                    <a href="consejos.html">CONSEJOS</a>
-                </li>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a href="../index.html"
+            ><img
+              id="logo"
+              class="nav-brad"
+              src="../media/hospit.jpg"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="navbarul" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../seccion/contactenos.html"
+                  >Contactanos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../seccion/articulos.html"
+                  >Articulo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../seccion/servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../seccion/consejos.html">Consejos</a>
+              </li>
             </ul>
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="#">
-                        <i id="Btn" class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </li>
-            </ul>
-            <i id="menuBurger" class="fa fa-bars"></i>
-        </nav>
-        <header class="header-show">
-            <h2>VETERINARIA </h2>
-            <h1>MEJORES AMIGOS</h1>
-            <a href="#" class="btn">Mas Informacion <i class="fas fa-angle-double-right"></i></a>
-        </header>
-        <section id="SeccForm">
-            <article>
-                <form action="" method="get" enctype="multipart/form-data">
-                    <h2>Completa el formulario y nos comunicaremos</h2>
-                    <fieldset>
-                        <legend>dotos el socio</legend>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="#" name="nombre">
-                        <br>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" required>
-                        <br>
-                        <label for="consulta">Consulta</label>
-                        <textarea name="consulta" cols="30" rows="10"></textarea>
-                        <br>
-                        <input type="submit" value="Enviar">
-                    </fieldset>
-                </form>
-            </article>
-        </section>
-        <article id="InfText">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque nostrum architecto eius libero,
-                asperiores sed fugit molestias quasi consequatur mollitia obcaecati ullam numquam modi, veritatis
-                minus. Nesciunt, maxime hic voluptatibus quo voluptates aliquid porro debitis assumenda alias quidem
-                error
-                id tempore ea labore nam voluptatem laudantium nemo sunt omnis consequuntur amet explicabo, ipsum, ipsam
-                dolorum!
-                Sapiente debitis voluptates reiciendis non esse quam inventore adipisci ic.
-            </p>
-        </article>
-        <aside id="side">
-            <h3>Menú Lateral</h3>
-            <ul>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-                <li><a href="#">#</a></li>
-            </ul>
-        </aside>
-        <footer class="social">
-            <p class="foot">Seguinos</p>
-            <div>
-                <a href=""><img class="redes" src="../media/whatsApp.png" alt=""></a>
-                <img class="redes" src="../media/Instagram.png" alt="">
-                <img class="redes" src="../media/twitter.png" alt="">
+            <form class="d-flex" role="search">
+              <input
+                id
+                class="form-control me-2"
+                type="Buscar"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="cont" class="row">
+        <aside id="aside" class="col-2">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Sucursal Centro</h5>
+                  <p class="card-text">
+                    Direccion: Carlos Roxlo 1456 esq Guayabos.
+                  </p>
+                  <input class="btn" type="button" value="Info" />
+                </div>
+              </div>
             </div>
-        </footer>
-    </div>
-</body>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="card-title">Sucursal Malvin</h6>
+                  <p class="card-text">Direccion: Missippi 5456 esq Legrand.</p>
+                  <input class="btn" type="button" value="Info" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Sucursal Carrasco</h5>
+                  <p class="card-text">
+                    Direccion: Santa Monica 4256 esq Av Italia.
+                  </p>
+                  <input class="btn" type="button" value="info" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section id="form" class="col-10">
+          <div class="row">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Ingrese Nombre</label
+              >
+              <input
+                type="name"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="nombre.."
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Ingrese Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="email@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Escriba su consulta</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="6"
+              ></textarea>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="
+              --bs-btn-padding-y: 0.25rem;
+              --bs-btn-padding-x: 0.7rem;
+              --bs-btn-font-size: 0.85rem;
+            "
+          >
+            enviar
+          </button>
+          <div class="row text-center">
+            <article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                vitae ullam modi perspiciatis incidunt exercitationem assumenda
+                maiores enim officiis quidem? Tenetur maiores corporis sit
+                repudiandae velit, eum, eius accusantium cumque consectetur
+                necessitatibus autem? Quae quis soluta voluptates facilis
+                tempora laborum aspernatur non voluptatum praesentium? Commodi
+                impedit vitae molestias possimus tempore voluptatibus, velit
+                ipsam quos atque ea reprehenderit. Natus, tenetur porro! Quasi,
+                explicabo exercitationem fugiat laboriosam veniam enim voluptas
+                a illo ipsa beatae labore? Repudiandae veniam quia at nobis
+                impedit dolorum, temporibus asperiores. Non eum inventore vero
+                repudiandae asperiores porro ut ad dolorum consequatur autem!
+                Veritatis eum sunt cupiditate recusandae quia?
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
 
+      <footer class="col-lg-12">
+        <div class="row">
+          <div id="foot2" class="col-7">
+            <p>Martin Machado Web &copy;</p>
+          </div>
+          <div class="col-5">
+            <img class="redes2" src="../media/Instagram.png" alt="" />
+            <img class="redes2" src="../media/twitter.png" alt="" />
+            <img class="redes2" src="../media/whatsApp.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
