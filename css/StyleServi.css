@@ -26,9 +26,6 @@ body {
 ul {
   list-style: none;
 }
-#menu a:hover {
-  text-decoration: underline;
-}
 
 #menu li > a {
   font-size: 18px;
@@ -36,12 +33,18 @@ ul {
 }
 #menu a:hover {
   text-decoration: underline;
+  color: #d07220;
+  transform: scale(1.2, 1.2);
 }
 #titulo_Servicios {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
+.images {
+  border-radius: 15px;
+  border: 2px solid rgb(228, 156, 102);
+  box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
+}
 footer {
   background-color: #d8953a;
   border-radius: 15px;

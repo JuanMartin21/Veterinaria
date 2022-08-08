@@ -23,6 +23,8 @@ body {
 }
 #menu a:hover {
   text-decoration: underline;
+  color: #d07220;
+  transform: scale(1.2, 1.2);
 }
 #menu form > button {
   font-size: 18px;
@@ -34,7 +36,8 @@ body {
 
 .images {
   border-radius: 30px;
-  box-shadow: 1px 2px 2px gray;
+  border: 2px solid rgb(228, 156, 102);
+  box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
 }
 
 .center {
