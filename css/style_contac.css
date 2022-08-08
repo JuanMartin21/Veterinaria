@@ -29,8 +29,6 @@ body {
 }
 ul {
   list-style: none;
-  color: #d07220;
-  transform: scale(1.2, 1.2);
 }
 #menu a:hover {
   text-decoration: underline;

@@ -46,8 +46,7 @@ ul {
 
 #imagen_principal {
   border-radius: 15px;
-  border: 2px solid rgb(228, 156, 102);
-  box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
+
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -102,7 +101,9 @@ h2 {
   text-decoration: underline;
   margin-bottom: 10px;
 }
-
+#banner {
+  border-radius: 15px !important;
+}
 .Art {
   text-align: center;
 }
