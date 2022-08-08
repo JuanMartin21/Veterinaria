@@ -1,24 +1,12 @@
-#logo {
-  width: 70px;
-}
-#nav {
-  text-decoration: none;
-  list-style: none;
-}
-a {
-  color: #0b2b3d;
-}
-a:hover {
-  border-bottom: 3px solid #0b2b3d;
-}
-.redes2 {
-  width: 25px;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-  width: 100%;
-}
-
-body {
+  height: 100vh;
+  background: #cfe6f6;
   color: #0b2b3d;
   background-color: #e09649;
   background-color: #fbd386;
@@ -28,14 +16,42 @@ body {
 }
 #logo {
   width: 70px;
+  margin-right: 20px;
+  border-radius: 15px;
 }
-#nav {
-  text-decoration: none;
+#menu li > a {
+  font-size: 18px;
+  color: rgb(14, 14, 54);
+}
+ul {
   list-style: none;
 }
-a {
-  color: #0b2b3d;
+#menu a:hover {
+  text-decoration: underline;
 }
-a:hover {
-  border-bottom: 3px solid #0b2b3d;
+
+#menu li > a {
+  font-size: 18px;
+  color: rgb(14, 14, 54);
+}
+#menu a:hover {
+  text-decoration: underline;
+}
+#titulo_Servicios {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#parrafo_servicios {
+  margin-bottom: 40px;
+}
+footer {
+  background-color: #d8953a;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.redes2 {
+  width: 25px;
+}
+.logos_redes {
+  width: 15px;
 }

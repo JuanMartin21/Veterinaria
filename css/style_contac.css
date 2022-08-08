@@ -5,11 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100%;
-}
 
 body {
+  height: 100hv;
+  background: #cfe6f6;
   color: #0b2b3d;
   background-color: #e09649;
   background-color: #fbd386;
@@ -21,10 +20,15 @@ body {
 #logo {
   width: 70px;
   margin-right: 20px;
+  border-radius: 15px;
 }
+
 #menu li > a {
   font-size: 18px;
-  color: rgb(14, 14, 54);
+  color: #113042;
+}
+ul {
+  list-style: none;
 }
 #menu a:hover {
   text-decoration: underline;
@@ -40,9 +44,6 @@ body {
 .nav {
   margin-top: 15px;
 }
-ul a {
-  color: #19445c;
-}
 
 .card {
   width: 100%;
@@ -51,20 +52,14 @@ ul a {
   background-color: #edbb73;
   font-size: 14 px;
 }
-/*
 .btn {
-  border: 1px solid rgb(93, 90, 90);
-  background-color: rgb(175, 175, 240);
-  color: #113042;
-  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
   font-weight: bold;
+  background: rgb(175, 175, 240);
   border-radius: 20px;
-  text-align: center;
-}*/
-#navbarul {
-  justify-content: center;
-  align-items: center;
-  align-items: center;
+  color: #061b27;
+  border: 1px solid rgb(42, 42, 42);
 }
 
 #aside {

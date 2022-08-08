@@ -17,15 +17,17 @@ body {
 #logo {
   width: 70px;
   margin-left: 15px;
+  border-radius: 15px;
 }
 #menu li > a {
   font-size: 18px;
-  color: rgb(14, 14, 54);
+  color: #113042;
 }
 
 ul {
   list-style: none;
 }
+
 #menu a:hover {
   text-decoration: underline;
 }
@@ -36,22 +38,23 @@ ul {
   background-color: rgb(175, 175, 240);
   color: #113042;
 }
-/*
+#lobi {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  padding: 10px 20px;
   background: rgb(175, 175, 240);
-  border-radius: 30px;
+  border-radius: 20px;
   color: #061b27;
   border: 1px solid rgb(42, 42, 42);
-  margin: 15px 15px;
 }
 .btn:hover {
   opacity: 0.7;
 }
-*/
 .Images {
   display: flex;
   justify-content: center;
