@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   background: #cfe6f6;
@@ -14,27 +16,20 @@ body {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
 }
-#logo {
+
+#menu li > a {
+  font-size: 18px;
+  color: rgb(14, 14, 54);
+}
+#menu li > a:hover {
+  text-decoration: underline;
+  color: #d07220;
+  transition: duration 0.3s;
+}
+#menu #logo {
   width: 70px;
   margin-left: 15px;
   border-radius: 15px;
-}
-#menu {
-  margin-top: 20px;
-}
-#menu li > a {
-  font-size: 18px;
-  color: #113042;
-}
-
-ul {
-  list-style: none;
-}
-
-#menu a:hover {
-  text-decoration: underline;
-  color: #d07220;
-  transform: scale(1.2, 1.2);
 }
 #menu form > button {
   font-size: 18px;
@@ -44,17 +39,12 @@ ul {
   color: #113042;
 }
 
-#imagen_principal {
-  border-radius: 15px;
-
-  margin-bottom: 30px;
-  margin-top: 20px;
-}
-.images {
-  border-radius: 05px;
+.Serv_img {
+  border-radius: 5px;
   border: 2px solid rgb(228, 156, 102);
   box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
 }
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -67,36 +57,37 @@ ul {
 .btn:hover {
   opacity: 0.7;
 }
-.Images {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 
 .Images img {
   width: 100%;
   height: 200px;
   border-radius: 15px;
 }
-.Images h3 {
+
+h3 {
   font-size: 20px;
   margin: 10px 0;
   text-align: center;
+  color: #113042;
 }
-.Images a {
-  padding: 10px 0;
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #061b27;
+}
+
+a {
+  /* padding: 10px 0;*/
   color: #061b27;
   display: inline-block;
   font-weight: bold;
 }
-.Images a:hover {
-  text-decoration: underline;
-}
+
 .title {
   text-align: center;
   justify-content: center;
 }
-h2 {
+.title h2 {
   font-size: 30px;
   text-decoration: underline;
   margin-bottom: 10px;
@@ -105,22 +96,18 @@ h2 {
 .Art {
   text-align: center;
 }
-.Featured img {
+.Art img {
   width: 150px;
   height: 150px;
   transition: all 2s;
-}
-.Featured img:hover {
-  transform: scale(1.1);
-}
-.Featured img {
   overflow: hidden;
 }
-.Featured h3 {
+.Art h4 {
   font-size: 20px;
   margin: 10px 0;
+  color: #113042;
 }
-.botton {
+.Art .botton {
   border: 1px solid rgb(93, 90, 90);
   background-color: rgb(175, 175, 240);
   color: #113042;
@@ -131,16 +118,27 @@ h2 {
   margin-top: 10px;
   cursor: pointer;
 }
-.botton:hover {
+.Art .botton:hover {
   opacity: 0.7;
+}
+
+.redes > a {
+  text-decoration: none;
+  color: rgb(31, 27, 27);
 }
 
 .logos_redes {
   width: 15px;
 }
+
+.Featured img:hover {
+  transform: scale(1.1);
+}
+
 .foot {
   background-color: #f59b4b;
 }
+
 .nav-main {
   grid-area: nav-main;
 }
@@ -158,6 +156,11 @@ h2 {
   display: grid;
 }
 
+@media screen and (min-width: 1000px) {
+  #menu a:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
 @media screen and (min-width: 1200px) {
   #main {
     grid-template-columns: 1fr;
@@ -192,10 +195,6 @@ h2 {
   #nav-menu {
     display: block;
   }
-
-  #menuBurger {
-    display: none;
-  }
 }
 @media (max-width: 800px) {
   #main {
@@ -209,14 +208,12 @@ h2 {
     margin-right: 40px;
     margin-left: 40px;
   }
-
   .Featured {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
   }
 }
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   #main {
     grid-template-columns: 100%;
     grid-template-rows: 30% 5% auto;
@@ -237,4 +234,4 @@ h2 {
   .header-show {
     display: none;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
