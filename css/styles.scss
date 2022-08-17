@@ -1,6 +1,18 @@
 @import "variables";
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"); 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@mixin box-shadow {
+        border: 2px solid rgb(228, 156, 102);
+        box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
+}
+@mixin link($color,$type) {
+    color :$color;
+    font-weight: $type;
+}
+@mixin hover($style){
+    text-decoration: $style;
+}
+
 
 * {
     margin: 0;
@@ -18,18 +30,43 @@ body {
     font-size: 16px;
     font-family: $FontPrincipal;
 }
+header{
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: map-get($palette, footer_color );
+    border-bottom: 15px solid map-get($palette, borderlight);
+    #nameCompany {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $FontPrincipal;
+            color:#37918B;
+            text-decoration: none;
+            font-weight: 700px;
+            text-shadow: 2px 2px 0.2px rgb(79, 77, 77);
+            font-size: 60px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            &:hover{
+                //transform: scale(1.1);
+                transition: duration(0.1ms);
+            }
 
-
-
+        }
+   
+}
+ 
 #menu {
     
     li > a {
     font-size: 18px;
-    color: $colorLink;
+    color: map-get($palette, colorparrafos);
     &:hover{
-        text-decoration: underline;
-        color: #d07220;
-        transition: duration (0.3s);
+        //text-decoration: underline;
+        color: map-get($palette, color_hover );
+       transition: duration (0.3s);
+       @include hover(underline)
     }
     
         
@@ -42,19 +79,16 @@ body {
         form>button {
             font-size: 18px;
             font-weight: bold;
-            border: 1px solid rgb(93, 90, 90);
-            background-color: $artic_BackgroundColor;
-            color: $artic_ButtonColor;
+            border: 1px solid map-get($palette, border_color );
+            background-color: map-get($palette, secundary);
+           color: map-get($palette, boton_color );
         }
     }
     
 
-
-
 .Serv_img {
     border-radius: 05px;
-    border: 2px solid rgb(228, 156, 102);
-    box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
+    @include box-shadow();
    
    
 }
@@ -62,10 +96,10 @@ body {
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
-    background: rgb(175, 175, 240);
+    background: map-get($palette, secundary );
     border-radius: 20px;
-    color: #061b27;
-    border: 1px solid rgb(42, 42, 42);
+    color: map-get($palette, boton_color );
+    border: 2px solid map-get($palette, border_color );
     &:hover{
         opacity: 0.7;
     }
@@ -81,28 +115,35 @@ body {
             font-size: 20px;
             margin: 10px 0;
             text-align: center;
-            color: $artic_ButtonColor;
+            color: map-get($palette, colorparrafos );
+            
         }
         p{
             font-family: $FontParrafos;
-            color: $Color_parrafos;
+            color: map-get($palette, colorparrafos )
+            
         }
         a {
            /* padding: 10px 0;*/
-            color: #061b27;
             display: inline-block;
-            font-weight: bold;
+            @include link(#43184F, bold);
+           
     }
 
 .title {
     text-align: center;
     justify-content: center;
+    
     h2 {
             font-size: 30px;
             text-decoration: underline;
-            margin-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+           
         }
+       
 }
+
 
 .Art {
     text-align: center;
@@ -116,11 +157,11 @@ body {
         h4 {
              font-size: 20px;
              margin: 10px 0;
-             color: $artic_ButtonColor;
+             color: map-get($palette, colorparrafos);
                   }.botton {
                     border: 1px solid rgb(93, 90, 90);
-                    background-color: $artic_BackgroundColor;
-                    color: $artic_ButtonColor;
+                    background-color: map-get($palette, secundary);
+                    color: map-get($palette, boton_color );
                     padding: 5px;
                     font-size: 15px;
                     font-weight: bold;
@@ -133,21 +174,51 @@ body {
                 }
 
 }
-.redes>a {
-    text-decoration: none;
-    color: rgb(31, 27, 27);
+.foot {
+    background-color: map-get($palette, footer_color);
+    margin-top: 15px;
+    border-top: 15px solid map-get($palette, borderlight);
+    padding: 15px;
+    .case1{
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: $FontParrafos;
+        @include link(rgb(19, 19, 52), 600)
+        
+    }
+    .case2 {
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .redes>a {
+                    text-decoration: none;
+                    color: map-get($palette, colorparrafos);
+                    flex-direction: row;
+                    font-size: 20px;
+            }
+          
+                
+            
+    }
+    .case3 {
+        justify-content: center;
+    }
 }
+
 .logos_redes {
-    width: 15px;
+    width: 25px;
 }
 
 .Featured img:hover {
     transform: scale(1.1);
 }
 
-.foot {
-    background-color: $FooterColor;
-}
+
 
 .nav-main {
     grid-area: nav-main;
@@ -224,6 +295,7 @@ body {
         grid-template-rows: 30% 5% auto;
         grid-template-areas: "Images""title""Featured";
     }
+    
 
     .Images {
         grid-template-columns: repeat(2, 2fr);
@@ -243,7 +315,7 @@ body {
     #main {
         grid-template-columns: 100%;
         grid-template-rows: 30% 5% auto;
-        grid-template-areas: "nav-main""Images""title""Featured""social";
+        grid-template-areas: "nav-main""Images""title""Featured";
         justify-content: center;
     }
 
@@ -264,5 +336,12 @@ body {
     .header-show {
         display: none;
     }
+    .case2{
+        margin-bottom: 10px;
+    }
+    .logos_redes {
+            width: 15px;
+        }
+    
     
     }
