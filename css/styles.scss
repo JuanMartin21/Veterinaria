@@ -9,8 +9,10 @@
     color :$color;
     font-weight: $type;
 }
-@mixin hover($style){
+
+@mixin hover($style) {
     text-decoration: $style;
+    
 }
 
 
@@ -49,8 +51,8 @@ header{
             padding-top: 15px;
             padding-bottom: 15px;
             &:hover{
-                //transform: scale(1.1);
-                transition: duration(0.1ms);
+                transform: scale(1.1);
+                transition: duration(0.2ms);
             }
 
         }
@@ -63,10 +65,10 @@ header{
     font-size: 18px;
     color: map-get($palette, colorparrafos);
     &:hover{
-        //text-decoration: underline;
+        text-decoration: underline;
         color: map-get($palette, color_hover );
        transition: duration (0.3s);
-       @include hover(underline)
+        @include hover(underline)
     }
     
         
@@ -175,6 +177,7 @@ header{
                 }
 
 }
+
 .foot {
     background-color: map-get($palette, footer_color);
     margin-top: 15px;
@@ -190,13 +193,13 @@ header{
         
     }
     .case2 {
+            display: flex;
             flex-direction: row;
             text-align: center;
-            justify-content: center;
-            display: flex;
+            justify-content: center; 
             justify-content: space-around;
             align-items: center;
-            .redes>a {
+            .redes > a {
                     text-decoration: none;
                     color: map-get($palette, colorparrafos);
                     flex-direction: row;
@@ -295,9 +298,10 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: 30% 5% auto;
         grid-template-areas: "Images""title""Featured";
+        
     }
     
-
+    
     .Images {
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(2, 1fr);
@@ -316,10 +320,9 @@ header{
     #main {
         grid-template-columns: 100%;
         grid-template-rows: 30% 5% auto;
-        grid-template-areas: "nav-main""Images""title""Featured";
+        grid-template-areas: "Images""title""Featured";
         justify-content: center;
     }
-
     .Images {
         grid-template-columns: auto;
         grid-template-rows: repeat(5, auto);
@@ -343,6 +346,8 @@ header{
     .logos_redes {
             width: 15px;
         }
-    
+    header{
+        background-color: blue !important;
+    }
     
     }

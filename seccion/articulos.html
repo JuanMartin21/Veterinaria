@@ -33,8 +33,8 @@
   </head>
 
   <body>
-    <header class="conteiner-fluid text-center justify-content-center">
-      <h1>DOS PATOS</h1>
+    <header class="container-fluid">
+      <h1 id="nameCompany">VETERINARIA DOS PATOS</h1>
     </header>
     <nav class="navbar navbar-expand-lg p-1" id="menu">
       <div class="container-fluid">
@@ -92,7 +92,14 @@
       </div>
     </nav>
     <div id="main">
-      <section id="title">
+      <section id="title" class="container">
+        <img
+          src="../media/pexels-pixabay-257540.jpg"
+          class="img-fluid"
+          alt="..."
+          id="img-dog"
+        />
+        <h3>ARTICULOS</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
           maxime!
@@ -204,14 +211,13 @@
         </div>
       </div>
     </div>
-    <footer class="container-fluid foot mt-2">
+    <footer class="container-fluid foot">
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-xs-12 mt-2 text-center">
+        <div class="col-lg-4 col-md-4 col-xs-12 case1">
           <p>Desarrollado por Martin Machado &copy;</p>
         </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 mt-2 text-center">
-          <p class="h6">Redes Sociales</p>
-          <div class="redes">
+        <div class="col-lg-5 col-md-4 col-xs-12 text-center case2">
+          <div class="redes col-xs-12">
             <a href="#">whatsApp</a>
             <img
               class="logos_redes"
@@ -227,7 +233,7 @@
               alt="logo Intagram"
             />
           </div>
-          <div class="redes mb-2">
+          <div class="redes">
             <a href="#">twitter</a>
             <img
               class="logos_redes"
@@ -236,19 +242,9 @@
             />
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 mt-2 text-center">
-          <div>
-            <p>
-              Terminos y condiciones
-              <a class="text-decoration-none" href="#"> >>info</a>
-            </p>
-          </div>
-          <div>
-            <p>
-              Politica de privacidad
-              <a class="text-decoration-none" href="#"> >>info</a>
-            </p>
-          </div>
+        <div class="col-lg-3 col-md-4 col-xs-12 text-center case3">
+          <h6>Horarios</h6>
+          <p>Lunes a Viernes 9 am a 20 am</p>
         </div>
       </div>
     </footer>
