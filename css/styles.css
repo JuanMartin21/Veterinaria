@@ -82,6 +82,7 @@ header #nameCompany:hover {
 }
 .btn:hover {
   opacity: 0.7;
+  color: #d07220;
 }
 
 .Images img {

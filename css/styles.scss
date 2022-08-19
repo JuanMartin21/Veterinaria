@@ -103,6 +103,7 @@ header{
     border: 2px solid map-get($palette, border_color );
     &:hover{
         opacity: 0.7;
+        color: #d07220;
     }
 }
 .last_botton{
@@ -300,7 +301,7 @@ header{
         grid-template-areas: "Images""title""Featured";
         
     }
-    
+   
     
     .Images {
         grid-template-columns: repeat(2, 2fr);

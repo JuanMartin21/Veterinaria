@@ -81,9 +81,16 @@ body {
     img{
         margin-top: 20px;
         border-radius: 15px;
+        box-shadow: 1px 2px 1px gray,1px 2px 1px gray;
     }
     p{
-    color: red;
+        margin-top: 55px;
+        margin-bottom: 55px;
+        color: map-get($palette, colorparrafos);
+        font-family: map-get($palette, $FontParrafos );
+        font-size: 18px;
+        text-align: center;
+
     }
 }
 #Featured {
@@ -106,7 +113,20 @@ body {
         //margin: 5px 0;
     }
 }
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    background: map-get($palette, secundary);
+    border-radius: 20px;
+    color: map-get($palette, boton_color);
+    border: 2px solid map-get($palette, border_color);
 
+    &:hover {
+        opacity: 0.7;
+        color: #d07220;
+    }
+}
 
 .botton {
     border: 1px solid rgb(93, 90, 90);
