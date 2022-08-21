@@ -64,6 +64,8 @@ header{
     li > a {
     font-size: 18px;
     color: map-get($palette, colorparrafos);
+    margin-left: 20px;
+    
     &:hover{
         text-decoration: underline;
         color: map-get($palette, color_hover );

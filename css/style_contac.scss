@@ -1,0 +1,170 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Playfair+Display:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100hv;
+    background: #cfe6f6;
+    color: #0b2b3d;
+    background-color: #e09649;
+    background-color: #fbd386;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c0b98a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-family: $FontPrincipal;
+    #logo {
+            width: 70px;
+            margin-left: 15px;
+            border-radius: 15px;
+    
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+}
+header {
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: map-get($palette, footer_color);
+    border-bottom: 15px solid map-get($palette, borderlight);
+
+    #nameCompany {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $FontPrincipal;
+        color: map-get($palette, color_title);
+        text-decoration: none;
+        font-weight: 700px;
+        text-shadow: 2px 2px 0.2px rgb(79, 77, 77);
+        font-size: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: duration(0.1ms);
+        }
+
+    }
+
+}
+#menu li>a {
+    font-size: 18px;
+    color: rgb(14, 14, 54);
+    margin-left: 20px;
+
+    &:hover {
+        text-decoration: underline;
+        color: #d07220;
+        transform: scale(1.2, 1.2);
+
+    }
+  
+       
+}
+
+
+.titulo {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    color: #19445c;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.card {
+    width: 100%;
+    margin: 10px;
+    border-radius: 10%;
+    background-color: #edbb73;
+    font-size: 14 px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    background: rgb(175, 175, 240);
+    border-radius: 20px;
+    color: #061b27;
+    border: 1px solid rgb(42, 42, 42);
+}
+
+
+.redes2 {
+    width: 25px;
+}
+@media  screen and(max-higth:400px) {
+    #images {
+            justify-content: center;
+            align-items: center;
+    
+            .case1 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+    
+            .case2 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    
+}
+
+.foot {
+    background-color: map-get($palette, footer_color);
+    margin-top: 15px;
+    border-top: 15px solid map-get($palette, borderlight);
+    padding: 15px;
+
+    .case1 {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: $FontParrafos;
+        color: rgb(19, 19, 52);
+        font-weight: 600;
+    }
+
+    .case2 {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .redes>a {
+            text-decoration: none;
+            color: map-get($palette, colorparrafos);
+            flex-direction: row;
+            font-size: 20px;
+        }
+
+    }
+
+    .case3 {
+        justify-content: center;
+    }
+
+    .logos_redes {
+        width: 25px;
+    }
+}

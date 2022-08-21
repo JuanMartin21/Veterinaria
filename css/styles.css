@@ -45,6 +45,7 @@ header #nameCompany:hover {
 #menu li > a {
   font-size: 18px;
   color: #061b27;
+  margin-left: 20px;
 }
 #menu li > a:hover {
   text-decoration: underline;

@@ -34,8 +34,8 @@
   </head>
 
   <body>
-    <header class="conteiner-fluid text-center justify-content-center">
-      <h1>DOS PATOS</h1>
+    <header class="container-fluid">
+      <h1 id="nameCompany">VETERINARIA DOS PATOS</h1>
     </header>
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg nav" id="menu">
@@ -203,33 +203,38 @@
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Sucursal Centro</h5>
-              <p class="card-text">
-                Direccion: Carlos Roxlo 1456 esq Guayabos.
-              </p>
+              <h5 class="card-title">Sucursal Pocitos</h5>
+              <p class="card-text">Direccion: av. Brasil 3268 esq Libertad.</p>
               <input class="btn" type="button" value="Info" />
             </div>
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Sucursal Centro</h5>
-              <p class="card-text">
-                Direccion: Carlos Roxlo 1456 esq Guayabos.
-              </p>
+              <h5 class="card-title">Sucursal Malvin</h5>
+              <p class="card-text">Direccion: Rivera 5678 esq Legrand.</p>
               <input class="btn" type="button" value="Info" />
             </div>
           </div>
         </aside>
       </div>
     </div>
+    <section class="container">
+      <div class="row" id="images">
+        <div class="col-lg-6 col-md-12 col-xs-12 case1">
+          <img src="../media/analisis.webp" class="rounded" alt="..." />
+        </div>
+        <div class="col-lg-6 col-md-12 col-xs-12 case2">
+          <img src="../media/analisis.webp" class="rounded" alt="..." />
+        </div>
+      </div>
+    </section>
     <footer class="container-fluid foot">
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-xs-12 mt-2 text-center">
+        <div class="col-lg-4 col-md-4 col-xs-12 case1">
           <p>Desarrollado por Martin Machado &copy;</p>
         </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 mt-2 text-center">
-          <p class="h6">Redes Sociales</p>
-          <div class="redes">
+        <div class="col-lg-5 col-md-4 col-xs-12 text-center case2">
+          <div class="redes col-xs-12">
             <a href="#">whatsApp</a>
             <img
               class="logos_redes"
@@ -245,7 +250,7 @@
               alt="logo Intagram"
             />
           </div>
-          <div class="redes mb-2">
+          <div class="redes">
             <a href="#">twitter</a>
             <img
               class="logos_redes"
@@ -254,19 +259,9 @@
             />
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 mt-2 text-center">
-          <div>
-            <p>
-              Terminos y condiciones
-              <a class="text-decoration-none" href="#"> >>info</a>
-            </p>
-          </div>
-          <div>
-            <p>
-              Politica de privacidad
-              <a class="text-decoration-none" href="#"> >>info</a>
-            </p>
-          </div>
+        <div class="col-lg-3 col-md-4 col-xs-12 text-center case3">
+          <h6>Horarios</h6>
+          <p>Lunes a Viernes 9 am a 20 am</p>
         </div>
       </div>
     </footer>
@@ -276,110 +271,5 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <!--
-        <aside id="aside" class="col-lg-2">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Sucursal Centro</h5>
-                  <p class="card-text">
-                    Direccion: Carlos Roxlo 1456 esq Guayabos.
-                  </p>
-                  <input class="btn" type="button" value="Info" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <h6 class="card-title">Sucursal Malvin</h6>
-                  <p class="card-text">Direccion: Missippi 5456 esq Legrand.</p>
-                  <input class="btn" type="button" value="Info" />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Sucursal Carrasco</h5>
-                  <p class="card-text">
-                    Direccion: Santa Monica 4256 esq Av Italia.
-                  </p>
-                  <input class="btn" type="button" value="info" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
-        <section id="form" class="col-10">
-          <div class="row">
-            <div class="mb-1">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Ingrese Nombre</label
-              >
-              <input
-                type="name"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="nombre.."
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Ingrese Email</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="email.."
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Escriba su consulta</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="6"
-                placeholder="Ingrese su consulta.."
-              ></textarea>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="btn btn-primary"
-            style="
-              --bs-btn-padding-y: 0.25rem;
-              --bs-btn-padding-x: 0.7rem;
-              --bs-btn-font-size: 0.85rem;
-            "
-          >
-            enviar
-          </button>
-          <div class="row text-center">
-            <article>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                vitae ullam modi perspiciatis incidunt exercitationem assumenda
-                maiores enim officiis quidem? Tenetur maiores corporis sit
-                repudiandae velit, eum, eius accusantium cumque consectetur
-                necessitatibus autem? Quae quis soluta voluptates facilis
-                tempora laborum aspernatur non voluptatum praesentium? Commodi
-                impedit vitae molestias possimus tempore voluptatibus, velit
-                ipsam quos atque ea reprehenderit. Natus, tenetur porro! Quasi,
-                explicabo exercitationem fugiat laboriosam veniam enim voluptas
-                a illo ipsa beatae labore? Repudiandae veniam quia at nobis
-                impedit dolorum, temporibus asperiores. Non eum inventore vero
-                repudiandae asperiores porro ut ad dolorum consequatur autem!
-                Veritatis eum sunt cupiditate recusandae quia?
-              </p>
-            </article>
-          </div>
-        </section>
-      </div>
-    </div>
-  --></body>
+  </body>
 </html>

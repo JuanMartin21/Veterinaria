@@ -9,6 +9,7 @@
 }
 
 body {
+    height: 100vh;
     font-family: "Oswald", sans-serif;
     overflow-x: hidden;
     background-color: #e09649;
@@ -54,11 +55,10 @@ body {
      }
 
  }
-
-
 #menu li>a {
     font-size: 18px;
     color: rgb(14, 14, 54);
+    margin-left: 20px;
     &:hover{
         text-decoration: underline;
         color: #d07220;
@@ -156,7 +156,8 @@ body {
         justify-content: flex-start;
         align-items: center;
         font-family: $FontParrafos;
-       // @include link(rgb(19, 19, 52), 600)
+        color: rgb(19, 19, 52);
+        font-weight: 600;
     }
 
     .case2 {

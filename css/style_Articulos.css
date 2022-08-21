@@ -7,6 +7,7 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Oswald", sans-serif;
   overflow-x: hidden;
   background-color: #e09649;
@@ -52,6 +53,7 @@ header #nameCompany:hover {
 #menu li > a {
   font-size: 18px;
   color: rgb(14, 14, 54);
+  margin-left: 20px;
 }
 #menu li > a:hover {
   text-decoration: underline;
@@ -140,6 +142,8 @@ header #nameCompany:hover {
   justify-content: flex-start;
   align-items: center;
   font-family: "Source Sans Pro", sans-serif;
+  color: rgb(19, 19, 52);
+  font-weight: 600;
 }
 .foot .case2 {
   flex-direction: row;

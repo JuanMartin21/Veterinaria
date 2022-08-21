@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Playfair+Display:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,26 +15,53 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c0b98a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   font-size: 16px;
   font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+body #logo {
+  width: 70px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+body #logo:hover {
+  transform: scale(1.2, 1.2);
 }
 
-#logo {
-  width: 70px;
-  margin-right: 20px;
-  border-radius: 15px;
+header {
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  background-color: #f59b4b;
+  border-bottom: 15px solid rgb(187, 181, 181);
+}
+header #nameCompany {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  color: #37918B;
+  text-decoration: none;
+  font-weight: 700px;
+  text-shadow: 2px 2px 0.2px rgb(79, 77, 77);
+  font-size: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header #nameCompany:hover {
+  transform: scale(1.1);
+  transition: duration(0.1ms);
 }
 
 #menu li > a {
   font-size: 18px;
-  color: #113042;
+  color: rgb(14, 14, 54);
+  margin-left: 20px;
 }
-ul {
-  list-style: none;
-}
-#menu a:hover {
+#menu li > a:hover {
   text-decoration: underline;
   color: #d07220;
   transform: scale(1.2, 1.2);
 }
+
 .titulo {
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -42,9 +69,6 @@ ul {
   color: #19445c;
   margin-top: 15px;
   margin-bottom: 25px;
-}
-.nav {
-  margin-top: 15px;
 }
 
 .card {
@@ -54,6 +78,7 @@ ul {
   background-color: #edbb73;
   font-size: 14 px;
 }
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -64,15 +89,52 @@ ul {
   border: 1px solid rgb(42, 42, 42);
 }
 
-#aside {
-}
-footer {
-  background-color: #d8953a;
-  border-radius: 15px;
-}
 .redes2 {
   width: 25px;
 }
-.logos_redes {
-  width: 15px;
+
+#images {
+  justify-content: center;
+  align-items: center;
 }
+#images img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.foot {
+  background-color: #f59b4b;
+  margin-top: 15px;
+  border-top: 15px solid rgb(187, 181, 181);
+  padding: 15px;
+}
+.foot .case1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(19, 19, 52);
+  font-weight: 600;
+}
+.foot .case2 {
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foot .case2 .redes > a {
+  text-decoration: none;
+  color: #061b27;
+  flex-direction: row;
+  font-size: 20px;
+}
+.foot .case3 {
+  justify-content: center;
+}
+.foot .logos_redes {
+  width: 25px;
+}/*# sourceMappingURL=style_contac.css.map */
