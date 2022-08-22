@@ -272,6 +272,10 @@ a {
     grid-template-areas: "Images" "title" "Featured";
     justify-content: center;
   }
+  header #nameCompany {
+    text-align: center;
+    font-size: 35px;
+  }
   .Images {
     grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
@@ -290,9 +294,6 @@ a {
     margin-bottom: 10px;
   }
   .logos_redes {
-    width: 15px;
-  }
-  header {
-    background-color: blue !important;
+    width: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

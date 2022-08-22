@@ -219,15 +219,22 @@ header #nameCompany:hover {
     grid-template-rows: auto;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   #main {
     grid-template-columns: 1fr;
     grid-template-rows: 10% auto;
     grid-template-areas: "title" "Featured";
   }
+  header #nameCompany {
+    text-align: center;
+    font-size: 35px;
+  }
   #title {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+  #title img {
+    display: none;
   }
   #Featured {
     grid-template-columns: repeat(2, 1fr);

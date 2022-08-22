@@ -1,7 +1,7 @@
+
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Playfair+Display:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
 
 * {
     margin: 0;
@@ -19,15 +19,16 @@ body {
     font-size: 16px;
     font-family: "Oswald", sans-serif;
     font-family: $FontPrincipal;
+
     #logo {
-            width: 70px;
-            margin-left: 15px;
-            border-radius: 15px;
-    
-            &:hover {
-                transform: scale(1.2, 1.2);
-            }
+        width: 70px;
+        margin-left: 15px;
+        border-radius: 15px;
+
+        &:hover {
+            transform: scale(1.2, 1.2);
         }
+    }
 }
 header {
     margin-top: auto;
@@ -61,79 +62,87 @@ header {
     font-size: 18px;
     color: rgb(14, 14, 54);
     margin-left: 20px;
+
     &:hover {
         text-decoration: underline;
         color: #d07220;
         transform: scale(1.2, 1.2);
 
     }
-  
-       
-}
 
 
-.titulo {
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    font-size: 35px;
-    color: #19445c;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    border-bottom: 6px solid map-get($palette, footer_color);
-    margin-bottom: 45px;
-    padding: 20px;
-    p{
-        margin-top: 35px;
-    }
-  
 }
-
-/*
-.card {
-    width: 100%;
-    margin: 10px;
-    border-radius: 10%;
-    background-color: #edbb73;
-    font-size: 14 px;
-}
-*/
 .btn {
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
-    background: map-get($palette, secundary);
+    background: rgb(175, 175, 240);
     border-radius: 20px;
-    color: map-get($palette, boton_color);
-    border: 2px solid map-get($palette, border_color);
-
+    color: #061b27;
+    border: 1px solid rgb(42, 42, 42);
     &:hover {
-        opacity: 0.7;
-        color: #d07220;
+            opacity: 0.7;
+            color: #d07220;
+        }
     }
-}
 
+#Brand{
 
-
-.redes2 {
-    width: 25px;
-}
+h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    color: #19445c;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-bottom: 6px solid map-get($palette, footer_color );
+    margin-bottom: 45px;
+    padding: 20px;
+    }
+    p {
+        margin-top: 35px;
+        margin-bottom: 50px;
+        text-align: center;
+        text-decoration: underline;
+        font-family: $FontPrincipal;
+        font-size: 20px;
+    }
 
     
-#section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-        margin-bottom: 15px;
-    }
-    h5{
-        color: map-get($palette, color_title);
+}
+
+#context{
+    
+   h3{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    color: map-get($palette, color_title);
         text-shadow: 1px 1px 0.2px rgb(124, 121, 121);
-        
+   }
+    .images{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+        width: 20rem;
+        margin-top: 15px;
+        margin-bottom: 15px; 
+        border-radius: 20px;
+
+        }
     }
-    p{
-        color: #19445c;
+    .prf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    
+        p{
+        text-align: justify;
+        }
     }
+
 }
 .foot {
     background-color: map-get($palette, footer_color);
@@ -176,56 +185,30 @@ header {
         width: 25px;
     }
 }
-.case4 {
-    img{
-        border-radius: 30px;
-        margin-top: 25px;
-        width: 20rem;
-        height: 15rem;
-    }
-    
- 
-    
-}
-@media screen and (max-width: 400px) {
-    
-        
-    header #nameCompany{
-        text-align: center;
-        font-size: 35px;
-        
-    }
-    .titulo{
-        font-size: 30px;
-    }
-    p{
-        text-align: center;
-    }
-    #cont{
-        font-size: 25px;
-    }
-    .STO{
-    h3 {
-        font-size: 20px;
-        }
-        p{
-            font-size: 15px;
-        }
-    }
-    .parrafo{
-        font-size: 14px;
-        p{
-        text-align: justify;
-        }
-    } 
-    #lateral{
-        width: 75%;
-        align-items: center;
-        margin-left: 28px;
-        //justify-content: center;
-        margin-right: 15px;
-        font-size: 15px;
-    }  
-}
 
-   
+
+@media screen and (max-width : 400px){
+    header #nameCompany {
+            text-align: center;
+            font-size: 35px;
+    
+        }
+        #Brand {
+    
+            h2 {font-size: 25px;
+            }
+    } 
+    #context {
+    h3{
+        font-size: 20px;
+    } 
+    p{
+        font-size: 15px;
+    } 
+
+    }
+    .redes >a{ 
+            font-size: 5px;
+        
+    }
+}
