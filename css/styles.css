@@ -37,10 +37,6 @@ header #nameCompany {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-header #nameCompany:hover {
-  transform: scale(1.1);
-  transition: duration(0.2ms);
-}
 
 #menu li > a {
   font-size: 18px;
@@ -105,7 +101,6 @@ p {
 }
 
 a {
-  /* padding: 10px 0;*/
   display: inline-block;
   color: #43184F;
   font-weight: bold;

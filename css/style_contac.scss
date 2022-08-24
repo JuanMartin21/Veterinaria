@@ -50,8 +50,7 @@ header {
         padding-bottom: 15px;
 
         &:hover {
-            transform: scale(1.1);
-            transition: duration(0.1ms);
+            text-decoration: underline;
         }
 
     }
@@ -64,13 +63,25 @@ header {
     &:hover {
         text-decoration: underline;
         color: #d07220;
-        transform: scale(1.2, 1.2);
+        //transform: scale(1.2, 1.2);
 
+    }
+    li:first-child{
+        text-decoration: none;
     }
   
        
 }
-
+#lateral{
+    border-radius: 15px;
+    background-color: map-get($palette, footer_color );
+    .card{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: #fbd386;
+        
+    }
+}
 
 .titulo {
     text-align: center;
@@ -88,15 +99,7 @@ header {
   
 }
 
-/*
-.card {
-    width: 100%;
-    margin: 10px;
-    border-radius: 10%;
-    background-color: #edbb73;
-    font-size: 14 px;
-}
-*/
+
 .btn {
     cursor: pointer;
     display: inline-block;
@@ -187,14 +190,16 @@ header {
  
     
 }
+
 @media screen and (max-width: 400px) {
     
-        
+    
     header #nameCompany{
         text-align: center;
         font-size: 35px;
         
     }
+    
     .titulo{
         font-size: 30px;
     }
@@ -203,6 +208,7 @@ header {
     }
     #cont{
         font-size: 25px;
+        
     }
     .STO{
     h3 {
@@ -220,12 +226,11 @@ header {
     } 
     #lateral{
         width: 75%;
-        align-items: center;
-        margin-left: 28px;
-        //justify-content: center;
-        margin-right: 15px;
+        //align-items: center;
+        margin-left: 45px;
         font-size: 15px;
     }  
+    
 }
 
    

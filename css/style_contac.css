@@ -47,8 +47,7 @@ header #nameCompany {
   padding-bottom: 15px;
 }
 header #nameCompany:hover {
-  transform: scale(1.1);
-  transition: duration(0.1ms);
+  text-decoration: underline;
 }
 
 #menu li > a {
@@ -59,7 +58,19 @@ header #nameCompany:hover {
 #menu li > a:hover {
   text-decoration: underline;
   color: #d07220;
-  transform: scale(1.2, 1.2);
+}
+#menu li > a li:first-child {
+  text-decoration: none;
+}
+
+#lateral {
+  border-radius: 15px;
+  background-color: #f59b4b;
+}
+#lateral .card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #fbd386;
 }
 
 .titulo {
@@ -77,15 +88,6 @@ header #nameCompany:hover {
   margin-top: 35px;
 }
 
-/*
-.card {
-    width: 100%;
-    margin: 10px;
-    border-radius: 10%;
-    background-color: #edbb73;
-    font-size: 14 px;
-}
-*/
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -190,9 +192,7 @@ header #nameCompany:hover {
   }
   #lateral {
     width: 75%;
-    align-items: center;
-    margin-left: 28px;
-    margin-right: 15px;
+    margin-left: 45px;
     font-size: 15px;
   }
 }/*# sourceMappingURL=style_contac.css.map */

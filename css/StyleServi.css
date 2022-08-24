@@ -46,10 +46,6 @@ header #nameCompany {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-header #nameCompany:hover {
-  transform: scale(1.1);
-  transition: duration(0.1ms);
-}
 
 #menu li > a {
   font-size: 18px;
@@ -59,7 +55,6 @@ header #nameCompany:hover {
 #menu li > a:hover {
   text-decoration: underline;
   color: #d07220;
-  transform: scale(1.2, 1.2);
 }
 
 .btn {
@@ -102,6 +97,8 @@ header #nameCompany:hover {
   text-decoration: underline;
   color: #37918B;
   text-shadow: 1px 1px 0.2px rgb(124, 121, 121);
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 #context .images {
   display: flex;
@@ -113,15 +110,14 @@ header #nameCompany:hover {
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 20px;
+  border-radius: 30px;
+  border: 2px solid rgb(228, 156, 102);
+  box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
 }
 #context .prf {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: justify;
-}
-#context .prf p {
-  text-align: justify;
 }
 
 .foot {

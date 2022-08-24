@@ -46,10 +46,6 @@ header #nameCompany {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-header #nameCompany:hover {
-  transform: scale(1.1);
-  transition: duration(0.1ms);
-}
 
 #menu li > a {
   font-size: 18px;
@@ -59,7 +55,6 @@ header #nameCompany:hover {
 #menu li > a:hover {
   text-decoration: underline;
   color: #d07220;
-  transform: scale(1.2, 1.2);
 }
 
 #menu form > button {
@@ -68,32 +63,6 @@ header #nameCompany:hover {
   border: 1px solid rgb(93, 90, 90);
   background-color: rgb(175, 175, 240);
   color: #113042;
-}
-
-.images {
-  border-radius: 30px;
-  border: 2px solid rgb(228, 156, 102);
-  box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
-}
-
-.fila {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  font-weight: bold;
-  background: rgb(175, 175, 240);
-  border-radius: 20px;
-  color: #061b27;
-  border: 2px solid rgb(93, 90, 90);
-}
-.btn:hover {
-  opacity: 0.7;
-  color: #d07220;
 }
 
 #intro {
@@ -115,6 +84,35 @@ header #nameCompany:hover {
   margin-top: 15px;
   margin-bottom: 50px;
   text-align: center;
+  text-align: justify;
+}
+
+.fila {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fila .images {
+  border-radius: 30px;
+  border: 2px solid rgb(228, 156, 102);
+  box-shadow: 1px 2px 2px 0.5px rgb(196, 172, 154);
+}
+.fila p {
+  text-align: justify;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  background: rgb(175, 175, 240);
+  border-radius: 20px;
+  color: #061b27;
+  border: 2px solid rgb(93, 90, 90);
+}
+.btn:hover {
+  opacity: 0.7;
+  color: #d07220;
 }
 
 .foot {
@@ -163,5 +161,7 @@ header #nameCompany:hover {
   .parrafo {
     font-size: 14px;
     text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=style_consejo.css.map */

@@ -50,15 +50,9 @@ header{
             font-size: 60px;
             padding-top: 15px;
             padding-bottom: 15px;
-            &:hover{
-                transform: scale(1.1);
-                transition: duration(0.2ms);
-            }
-
-        }
    
+    }
 }
- 
 #menu {
     
     li > a {
@@ -130,7 +124,7 @@ header{
             
         }
         a {
-           /* padding: 10px 0;*/
+           
             display: inline-block;
             @include link(#43184F, bold);
            
@@ -291,9 +285,7 @@ header{
 
     #nav-menu {
         display: block;
-    }
-
-     
+    } 
 }
 
 @media (max-width: 800px) {
@@ -302,9 +294,7 @@ header{
         grid-template-rows: 30% 5% auto;
         grid-template-areas: "Images""title""Featured";
         
-    }
-   
-    
+    } 
     .Images {
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(2, 1fr);
@@ -354,6 +344,4 @@ header{
     .logos_redes {
             width: 20px;
         }
-       
-    
     }

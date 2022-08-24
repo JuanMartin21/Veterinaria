@@ -45,10 +45,6 @@ header #nameCompany {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-header #nameCompany:hover {
-  transform: scale(1.1);
-  transition: duration(0.1ms);
-}
 
 #menu li > a {
   font-size: 18px;
@@ -58,7 +54,6 @@ header #nameCompany:hover {
 #menu li > a:hover {
   text-decoration: underline;
   color: #d07220;
-  transform: scale(1.2, 1.2);
 }
 
 #title h3 {
